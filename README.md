@@ -18,6 +18,8 @@ Monday 9/11/20
 
 Tuesday 10/11/20
 -solving Git problems. 
+-Relative paths.
+-submitting project to google form.
 -Researching shape files and zooming in on RasterIO
 
 
