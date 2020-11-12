@@ -21,6 +21,18 @@ Tuesday 10/11/20
 -Relative paths.
 -submitting project to google form.
 -Researching shape files and zooming in on RasterIO
+-color maps
+-RAM problems
+-found Bruges on the tiffs
+-windows of RasterIO
+
+
+Thursday 12/11/20
+-Window method of RasterIO
+-https://www.youtube.com/watch?v=kJXUUO5M4ok tutorial
+-https://www.youtube.com/watch?v=3kj8uoOlwjg tutorial
+-decided to read the whole RasterIO Docs
+
 
 
 WHAT
