@@ -32,8 +32,13 @@ Thursday 12/11/20
 -https://www.youtube.com/watch?v=kJXUUO5M4ok tutorial
 -https://www.youtube.com/watch?v=3kj8uoOlwjg tutorial
 -decided to read the whole RasterIO Docs
+-bounding box around lambert coordinates.
 
-
+Friday 13/11/20
+-Reprojection with RasterIO
+-georasters tiff to pandas df (unsuccesful)
+-3D plot with matplotlib
+-3D plot with plotly
 
 WHAT
 
