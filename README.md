@@ -41,12 +41,16 @@ Friday 13/11/20
 -3D plot with plotly
 
 Monday 16/11/20
--Conversion from Lambert to DMS?
--Latlon librairy
+-Conversion from Lambert to EPSG:4326
+-Latlon librairy - code? (abandoned)
 -reprojection RasterIO
 
 Tuesday 17/11/20
--put everything in a python program asking for variables
+-put everything in a python program asking for input
+-smoothing options for plotly
+-transformer piproj
+-researched Techtalk a bit
+-smoothed with simple y axis operation
 
 Wednesday 18/11/20
 
