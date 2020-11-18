@@ -46,14 +46,17 @@ Monday 16/11/20
 -reprojection RasterIO
 
 Tuesday 17/11/20
--put everything in a python program asking for input
+-put everything in a new notebook asking for input
 -smoothing options for plotly
--transformer piproj
+-transformer pyproj
 -researched Techtalk a bit
 -smoothed with simple y axis operation
 
 Wednesday 18/11/20
-
+-convert DMS to DD
+-write python script
+-GUI exploration
+-Spike trouble again!
 
 Thursday 19/11/20
 - Dash?
