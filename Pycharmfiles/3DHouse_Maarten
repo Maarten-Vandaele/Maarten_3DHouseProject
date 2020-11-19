@@ -1,0 +1,65 @@
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import geopandas as gpd
+import rasterio
+from rasterio.plot import show
+from rasterio.windows import Window
+import pyproj
+from rasterio.windows import from_bounds
+import plotly.graph_objects as go
+from dms2dec.dms_convert import dms2dec
+import PySimpleGUI as sg
+
+
+sg.theme('Dark')   # Add a touch of color
+# All the stuff inside your window.
+layout = [  [sg.Text('Please enter the address and coördinate info')],
+            [sg.Text('Address:'), sg.InputText()],
+            [sg.Text('Latitude degrees'), sg.InputText()],
+            [sg.Text('Latitude minutes'), sg.InputText()],
+            [sg.Text('Latitude seconds'), sg.InputText()],
+            [sg.Text('Longitude degrees'), sg.InputText()],
+            [sg.Text('Longitude minutes'), sg.InputText()],
+            [sg.Text('Longitude seconds'), sg.InputText()],
+            [sg.Text('How big would you like your bounding box? (in m²)'), sg.InputText()],
+            [sg.Button('Submit'), sg.Button('Cancel')] ]
+
+# Create the Window
+window = sg.Window('3D House lookup', layout)
+# Event Loop to process "events" and get the "values" of the inputs
+while True:
+    event, values = window.read()
+    if event == sg.WIN_CLOSED or event == 'Cancel': # if user closes window or clicks cancel
+        break
+    elif event == 'Submit':
+
+        address = values[0]
+
+        latDMS = f'{values[1]}°{values[2]}\'{values[3]}\"'
+        lonDMS = f'{values[4]}°{values[5]}\'{values[6]}\"'
+
+        box = int(values[7])//2
+
+        lat = dms2dec(latDMS)
+        lon = dms2dec(lonDMS)
+
+        transformer = pyproj.Transformer.from_crs('epsg:4326', 'epsg:31370')
+
+        lambtuple = transformer.transform(lat, lon)
+
+        left = lambtuple[0] - box
+        right = lambtuple[0] + box
+        bottom = lambtuple[1] - box
+        top = lambtuple[1] + box
+
+        with rasterio.open("DHMVIIDSMRAS1m_k13.tif") as src:
+            rst = src.read(1, window=from_bounds(left, bottom, right, top, src.transform))
+
+        df_window = pd.DataFrame(rst)
+
+        fig = go.Figure(data=[go.Surface(z=df_window.values, colorscale='twilight')])
+        fig.update_layout(title=address, scene=dict(aspectmode="data",xaxis_autorange="reversed"), autosize=True)
+        fig.show()
+
+window.close()

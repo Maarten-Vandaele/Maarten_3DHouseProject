@@ -1,6 +1,7 @@
 # 3D_house_project
 Solo project python pandas matplotlib
 
+PROGRESS
 
 Friday 6/11/20 
 -going over the project case
@@ -60,6 +61,11 @@ Wednesday 18/11/20
 
 Thursday 19/11/20
 - Dash?
+-pysimplegui research
+-matching pycharm with conda env
+-notebook to .py
+-Finished with the GUI
+-Readme and submitting project
 
 
 WHAT
