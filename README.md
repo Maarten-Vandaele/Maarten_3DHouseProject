@@ -82,10 +82,10 @@ The purpose of the project is to show a nice 3D plot with a bounding box around 
 
 ## Screenshots
 
-![Gotham](gotham.PNG) 
+![Gotham](gotham.PNG "gotham look because of unscaled Z axis") 
 
 
-![markt](markt.PNG)
+![Boudewijnpark](zwembadje.PNG "Boudewijnpark - scaled correct")
 
 ## Technologies
 
