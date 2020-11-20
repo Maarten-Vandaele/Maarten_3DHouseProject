@@ -100,7 +100,7 @@ Gotham look                                                      |  Boudewijnpar
 ## Setup
 You can clone or fork this repository and test the files. You need a Geotif file named DHMVIIDSMRAS1m_k13 that is located at the following URL; http://www.geopunt.be/download?container=dhm-vlaanderen-ii-dsm-raster-1m&title=Digitaal%20Hoogtemodel%20Vlaanderen%20II,%20DSM,%20raster,%201m
 
-Place it in the same directory as the python script.
+Place it in the same directory as the python script called '3DHouse_Maarten'.
 
 ## Features
 The product features are as follow:
