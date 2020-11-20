@@ -83,7 +83,7 @@ The purpose of the project is to show a plot with a bounding box around a certai
 ## Screenshots
 ![Gotham](gotham.PNG)
 
-![grote markt](grote markt.PNG)
+![grote markt](grotemarkt.PNG)
 
 ## Technologies
 
