@@ -68,20 +68,52 @@ Thursday 19/11/20
 -Readme and submitting project
 
 
-WHAT
+## Table of contents
+* [General info](#general-info)
+* [Screenshots](#screenshots)
+* [Technologies](#technologies)
+* [Setup](#setup)
+* [Features](#features)
+* [Status](#status)
+* [Contact](#contact)
+
+## General info
+The purpose of the project is to show a nice 3D plot with a bounding box around a certain DMS coördinate. This Beta version can plot in the region around Bruges. A possible add on is the whole of Belgium.
+
+## Screenshots
+
+Gotham look                                                      |  Boudewijnpark
+:---------------------------------------------------------------:|:------------------------------------------------------------------:
+ ![Gotham](gotham.PNG "gotham look because of unscaled Z axis")  | ![Boudewijnpark](zwembadje.PNG "Boudewijnpark - scaled correct")
 
 
-WHY
 
 
+## Technologies
 
-WHEN
+* Python
+* Plotly
+* Jupyter notebook
+* PySimpleGui
+* pycharm
+
+## Setup
+You can clone or fork this repository and test the files. You need a Geotif file named DHMVIIDSMRAS1m_k13 that is located at the following URL; http://www.geopunt.be/download?container=dhm-vlaanderen-ii-dsm-raster-1m&title=Digitaal%20Hoogtemodel%20Vlaanderen%20II,%20DSM,%20raster,%201m
+
+Place it in the same directory as the python script.
+
+## Features
+The product features are as follow:
+
+1. GUI for input.
+2. Address title, DMS coördinates and bounding box input
+3. transforming coördinates from DMS to Belgian lambert.
+4. Plotly plot zoomable and rotates.
 
 
+## Status
+Challenge is: finished, final version.
 
-HOW
-
-
-
-WHO
+## Contact
+Created by [@Maarten-Vandaele](www.github.com/Maarten-Vandaele) - feel free to contact me!
 
