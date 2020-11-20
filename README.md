@@ -78,11 +78,14 @@ Thursday 19/11/20
 * [Contact](#contact)
 
 ## General info
-The purpose of the project is to show a plot with a bounding box around a certain DMS coördinate. This Beta version can plot in the region around Bruges. A possible add on is the whole of Belgium.
+The purpose of the project is to show a nice 3D plot with a bounding box around a certain DMS coördinate. This Beta version can plot in the region around Bruges. A possible add on is the whole of Belgium.
 
 ## Screenshots
 
-![Gotham](gotham.PNG) ![markt](markt.PNG)
+![Gotham](gotham.PNG) 
+
+
+![markt](markt.PNG)
 
 ## Technologies
 
@@ -94,6 +97,8 @@ The purpose of the project is to show a plot with a bounding box around a certai
 
 ## Setup
 You can clone or fork this repository and test the files. You need a Geotif file named DHMVIIDSMRAS1m_k13 that is located at the following URL; http://www.geopunt.be/download?container=dhm-vlaanderen-ii-dsm-raster-1m&title=Digitaal%20Hoogtemodel%20Vlaanderen%20II,%20DSM,%20raster,%201m
+
+Place it in the same directory as the python script.
 
 ## Features
 The product features are as follow:
