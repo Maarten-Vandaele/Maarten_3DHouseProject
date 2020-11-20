@@ -22,7 +22,7 @@ layout = [  [sg.Text('Please enter the address and coördinate info')],
             [sg.Text('Longitude degrees'), sg.InputText()],
             [sg.Text('Longitude minutes'), sg.InputText()],
             [sg.Text('Longitude seconds'), sg.InputText()],
-            [sg.Text('bounding box size (in m²)'), sg.InputText()],
+            [sg.Text('bounding box size (m)'), sg.InputText()],
             [sg.Button('Submit and plot!'), sg.Button('Cancel')] ]
 
 # Create the Window
@@ -44,20 +44,25 @@ while True:
         lat = dms2dec(latDMS)
         lon = dms2dec(lonDMS)
 
+        #Convert from DMS to Belgian Lambert
         transformer = pyproj.Transformer.from_crs('epsg:4326', 'epsg:31370')
 
         lambtuple = transformer.transform(lat, lon)
 
+        #Bounding box from 1 point
         left = lambtuple[0] - box
         right = lambtuple[0] + box
         bottom = lambtuple[1] - box
         top = lambtuple[1] + box
 
+        #Rasterio windowing
         with rasterio.open("DHMVIIDSMRAS1m_k13.tif") as src:
             rst = src.read(1, window=from_bounds(left, bottom, right, top, src.transform))
 
+        #convert to pandas dataframe
         df_window = pd.DataFrame(rst)
 
+        #plot with plotly
         fig = go.Figure(data=[go.Surface(z=df_window.values, colorscale='twilight')])
         fig.update_layout(title=address, scene=dict(aspectmode="data",xaxis_autorange="reversed"), autosize=True)
         fig.show()
