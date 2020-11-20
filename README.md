@@ -88,7 +88,7 @@ WHO
 ## Table of contents
 * [General info](#general-info)
 * [Screenshots](#screenshots)
-* [Technologies used](#technologies used)
+* [Technologies](#technologies)
 * [Setup](#setup)
 * [Features](#features)
 * [Status](#status)
@@ -98,10 +98,10 @@ WHO
 The purpose of the project is to show a plot with a bounding box around a certain DMS coördinate. This Beta version can plot in the region around Bruges. A possible add on is the whole of Belgium.
 
 ## Screenshots
-![Example screenshot](./Gotham.PNG)
-![Example screenshot](./grote markt.PNG)
+![Example screenshot](Gotham.PNG)
+![Example screenshot](grote markt.PNG)
 
-## Technologies used
+## Technologies
 
 * Python
 * Plotly
