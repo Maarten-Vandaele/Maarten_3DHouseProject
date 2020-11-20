@@ -81,11 +81,8 @@ Thursday 19/11/20
 The purpose of the project is to show a plot with a bounding box around a certain DMS coördinate. This Beta version can plot in the region around Bruges. A possible add on is the whole of Belgium.
 
 ## Screenshots
-Early plot with spike problems.
-![Gotham](gotham.PNG)
 
-mid plot with better scaling.
-![markt](markt.PNG)
+![Gotham](gotham.PNG) ![markt](markt.PNG)
 
 ## Technologies
 
