@@ -68,23 +68,6 @@ Thursday 19/11/20
 -Readme and submitting project
 
 
-WHAT
-
-
-WHY
-
-
-
-WHEN
-
-
-
-HOW
-
-
-
-WHO
-
 ## Table of contents
 * [General info](#general-info)
 * [Screenshots](#screenshots)
@@ -99,6 +82,7 @@ The purpose of the project is to show a plot with a bounding box around a certai
 
 ## Screenshots
 ![Example screenshot](Gotham.PNG)
+
 ![Example screenshot](grote markt.PNG)
 
 ## Technologies
