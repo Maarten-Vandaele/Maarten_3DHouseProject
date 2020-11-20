@@ -85,3 +85,45 @@ HOW
 
 WHO
 
+## Table of contents
+* [General info](#general-info)
+* [Screenshots](#screenshots)
+* [Technologies used](#technologies used)
+* [Setup](#setup)
+* [Features](#features)
+* [Status](#status)
+* [Contact](#contact)
+
+## General info
+The purpose of the project is to show a plot with a bounding box around a certain DMS coördinate. This Beta version can plot in the region around Bruges. A possible add on is the whole of Belgium.
+
+## Screenshots
+![Example screenshot](./Gotham.PNG)
+![Example screenshot](./grote markt.PNG)
+
+## Technologies used
+
+* Python
+* Plotly
+* Jupyter notebook
+* PySimpleGui
+* pycharm
+
+## Setup
+You can clone or fork this repository and test the files.
+
+## Features
+The product features are as follow:
+
+1. GUI for input.
+2. Address title, DMS coördinates and bounding box input
+3. transforming coördinates from DMS to Belgian lambert.
+4. Plotly plot zoomable and rotates.
+
+
+## Status
+Challenge is: finished, final version.
+
+## Contact
+Created by [@Maarten-Vandaele](www.github.com/Maarten-Vandaele) - feel free to contact me!
+
