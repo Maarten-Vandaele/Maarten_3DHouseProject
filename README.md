@@ -87,9 +87,9 @@ Gotham look
  ![Gotham](gotham.PNG "gotham look because of unscaled Z axis") 
  
  
-Boudewijnpark
+Grote markt
 :-------
- ![Boudewijnpark](zwembadje.PNG "Boudewijnpark - scaled correct")
+ ![GroteMarkt](grote markt.PNG "Grote markt brugge")
 
 
 
