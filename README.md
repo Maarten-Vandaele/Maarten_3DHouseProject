@@ -89,7 +89,7 @@ Gotham look
  
 Grote markt
 :-------
- ![GroteMarkt](grote markt.PNG "Grote markt brugge")
+ ![GroteMarkt](markt.PNG "Grote markt brugge")
 
 
 
