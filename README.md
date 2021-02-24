@@ -82,9 +82,14 @@ The purpose of the project is to show a nice 3D plot with a bounding box around 
 
 ## Screenshots
 
-Gotham look                                                      |  Boudewijnpark
-:---------------------------------------------------------------:|:------------------------------------------------------------------:
- ![Gotham](gotham.PNG "gotham look because of unscaled Z axis")  | ![Boudewijnpark](zwembadje.PNG "Boudewijnpark - scaled correct")
+Gotham look                                                     
+:---------------------------------------------------------------
+ ![Gotham](gotham.PNG "gotham look because of unscaled Z axis") 
+ 
+ 
+Boudewijnpark
+:-------
+ ![Boudewijnpark](zwembadje.PNG "Boudewijnpark - scaled correct")
 
 
 
